@@ -8,8 +8,14 @@ body {
 #msgShow{
   text-align:center;
   font-size: 30px;
-  
- }
+}
+
+.display-3{
+  font-size: 100px;
+}
+.lead{
+  font-size: 30px;
+}
 
 textarea{
   background: transparent;
@@ -27,6 +33,7 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
   margin-bottom: 0px;
+  padding: 10px;
 }
 
 
