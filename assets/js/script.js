@@ -42,7 +42,7 @@ planWorkday.forEach(function(timeBlock, index) {
 		blockColor +
 		'">' +
 		timeBlock.event +
-		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fas fa-plus"></i></button></div></div></div>';
+		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fa-solid fa-floppy-disk width:20px height:20px"></i></button></div></div></div>';
 
 	// show entry rows
 	$(".container-fluid").append(row);
@@ -65,7 +65,7 @@ function colorMe(time) {
 $(".saveBtn").on("click", function(event) {
 
 	
-
+//display message when event saved in localstorage
 	var x = document.getElementById('msgShow');
 	if (x.style.display === 'none') {
 	  x.style.display = 'block';
@@ -73,8 +73,6 @@ $(".saveBtn").on("click", function(event) {
 	  x.style.display = 'none';
 	}
 
-const msg1 = "Appointment Added to";
-const msg2 ="localstorage";
 
 	var blockID = parseInt(
 		$(this)

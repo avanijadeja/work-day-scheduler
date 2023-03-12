@@ -7,7 +7,7 @@ body {
 
 #msgShow{
   text-align:center;
-  font-size: 20px;
+  font-size: 30px;
   
  }
 
@@ -75,7 +75,11 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn i{
   font-size: 20px;
+}
+
+.saveBtn i:hover {
+  font-size: 40px;
   transition: all .3s ease-in-out;
 }
