@@ -16,13 +16,13 @@ work-day-scheduler is a one type of planner or calender application in which use
 
 here I can attached some screenshots of work-day-schuduler applicaiton and links .
 
-1) The URL of the work-day-scheduler functional, deployed application -
+1. The URL of the work-day-scheduler functional, deployed application -
 
 
-2)The URL of the work-day-scduler GitHub repository -
+2. The URL of the work-day-scduler GitHub repository -
 
 
-3) Screenshots of work-day-schduler application outputs.
+3. Screenshots of work-day-schduler application outputs.
 
 ![day_timewithColor](assets/images/day_timeWithColor.png)
 ![eventAdded](assets/images/eventAdded.png)
@@ -32,13 +32,13 @@ here I can attached some screenshots of work-day-schuduler applicaiton and links
 
 ## Credits
 
-1) for this application I used like HTML,CSS,Javascript which I learned in my bootcamp class and also I learned from https://w3schools.com/.
+1. for this application I used like HTML,CSS,Javascript which I learned in my bootcamp class and also I learned from https://w3schools.com/.
 
-2) I am using font and icons form website https://fontawesome.com/icons. 
+2. I am using font and icons form website https://fontawesome.com/icons. 
 
-3)I am using bootstap class fluid so first I read from this https://getbootstrap.com/docs/5.0/layout/containers/ and then I decide to use container-fluid class in my application.
+3. I am using bootstap class fluid so first I read from this https://getbootstrap.com/docs/5.0/layout/containers/ and then I decide to use container-fluid class in my application.
 
-4)I am using date moment() function I read and implement using https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js.
+4. I am using date moment() function I read and implement using https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js.
 
 
 ## License 
