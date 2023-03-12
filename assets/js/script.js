@@ -63,9 +63,23 @@ function colorMe(time) {
 
 // save button
 $(".saveBtn").on("click", function(event) {
+
+	
+
+	var x = document.getElementById('msgShow');
+	if (x.style.display === 'none') {
+	  x.style.display = 'block';
+	} else {
+	  x.style.display = 'none';
+	}
+
+const msg1 = "Appointment Added to";
+const msg2 ="localstorage";
+
 	var blockID = parseInt(
 		$(this)
 			.closest(".time-block")
+     
 			.attr("id")
 	);
 	
@@ -81,4 +95,5 @@ $(".saveBtn").on("click", function(event) {
 
 	// updates planWorkday local storage
 	localStorage.setItem("dayPlanner", JSON.stringify(planWorkday));
+
 });
