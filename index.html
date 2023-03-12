@@ -4,32 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- link for bootstap css-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />	
-		
+		<!-- link for font and icon css-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+		<!-- link to style.css file-->
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<!--title of webpage-->
 		<title>Work Day Scheduler</title>
 	</head>
 	<body>
+		<!-- Display Header on the top of the page with application name,information and current day with month-->
 		<header class="jumbotron">
 			<h1 class="display-3">Work Day Scheduler</h1>
 			<p class="lead">A simple calendar app for scheduling your work day</p>
 			<p id="currentDay" class="lead"></p>
-     
-		</header>
+     	</header>
 
-    <!-- Diplay Appointment added message on top -->
+    <!-- Diplay Appointment added message on top when some event is store in local storage-->
     <div id="msgShow" style="display:none">Appointment added to <em style="color:red">local Storage.</em><i class="fa-sharp fa-solid fa-check color:'green' width:'60px'"></i></div>
+	<!-- Apply boorstrap container-fluid class for time,event and save button-->
+	<div class="container-fluid"></div>
 
-		<div class="container-fluid"></div>
-
-
-		<script src="https://kit.fontawesome.com/1cc5977b2c.js" crossorigin="anonymous"></script>
-		
-		
-		
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-		<script src="assets/js/script.js"></script>
+	<!-- link to font awesome javscript file -->
+	<script src="https://kit.fontawesome.com/1cc5977b2c.js" crossorigin="anonymous"></script>
+	<!-- link to jquery javascript file-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+	<!-- link to moment() function javascript file-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<!-- link to script.js file-->
+	<script src="assets/js/script.js"></script>
 	</body>
 </html>

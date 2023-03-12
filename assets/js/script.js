@@ -1,39 +1,43 @@
-$(function() {});
+//main function call
+$(function()
+{
+ 	// variable today save the current day
+	var today = moment().format("dddd, MMMM Do");
+	
+	// varible now save the current hour
+	var now = moment().format("H A");
 
-// today is the current day
-var today = moment().format("dddd, MMMM Do");
+	// planWorkday entries for each hour of the workday
+	var planWorkday =	 [
+		{ time: "9 AM", event: "" },
+		{ time: "10 AM", event: "" },
+		{ time: "11 AM", event: "" },
+		{ time: "12 PM", event: "" },
+		{ time: "1 PM", event: "" },
+		{ time: "2 PM", event: "" },
+		{ time: "3 PM", event: "" },
+		{ time: "4 PM", event: "" },
+		{ time: "5 PM", event: "" }	
+	];
 
-// now is the current hour
-var now = moment().format("H A");
+	// adds local storage to checkPrevious var, and if needed updates planWorkday
+	var checkPrevious = JSON.parse(localStorage.getItem("dayPlanner"));
+		if (checkPrevious !== null)
+		{
+			planWorkday = checkPrevious;
+		}
+	
+	// displays the current day
+	$("#currentDay").text(today);
 
-// planWorkday entries for each hour of the workday
-var planWorkday = [
-	{ time: "9 AM", event: "" },
-	{ time: "10 AM", event: "" },
-	{ time: "11 AM", event: "" },
-	{ time: "12 PM", event: "" },
-	{ time: "1 PM", event: "" },
-	{ time: "2 PM", event: "" },
-	{ time: "3 PM", event: "" },
-	{ time: "4 PM", event: "" },
-	{ time: "5 PM", event: "" }
-];
-
-// adds local storage to checkPrevious var, and if needed updates planWorkday
-var checkPrevious = JSON.parse(localStorage.getItem("dayPlanner"));
-	if (checkPrevious !== null) {
-	planWorkday = checkPrevious;
-}
-// displays the current day
-$("#currentDay").text(today);
-
-// creates the color for the row
-planWorkday.forEach(function(timeBlock, index) {
-	var timeLabel = timeBlock.time;
-	var blockColor = colorMe(timeLabel);
-
-	// variable containing the entire row, including the button
-	var row =
+	// creates the color for the row
+	planWorkday.forEach(function(timeBlock, index) 
+	{
+		var timeLabel = timeBlock.time;
+		var blockColor = colorMe(timeLabel);
+		
+		// variable containing the entire row, including the button
+		var row =
 		'<div class="time-block" id="' +
 		index +
 		'"><div class="row no-gutters input-group"><div class="col-sm col-lg-1 input-group-prepend hour justify-content-sm-end pr-3 pt-3">' +
@@ -44,41 +48,46 @@ planWorkday.forEach(function(timeBlock, index) {
 		timeBlock.event +
 		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fa-solid fa-floppy-disk width:20px height:20px"></i></button></div></div></div>';
 
-	// show entry rows
-	$(".container-fluid").append(row);
+		// show entry rows
+		$(".container-fluid").append(row);
 });
 
 // function for past, present, next color
-function colorMe(time) {
+function colorMe(time) 
+{
 	var planNow = moment(now, "H A");
 	var planEntry = moment(time, "H A");
-	if (planNow.isBefore(planEntry) === true) {
+	if (planNow.isBefore(planEntry) === true) 
+	{
 		return "future";
-	} else if (planNow.isAfter(planEntry) === true) {
+	} 
+	else if (planNow.isAfter(planEntry) === true)
+	{
 		return "past";
-	} else {
+	} 
+	else
+	{
 		return "present";
 	}
 }
-
-// save button
-$(".saveBtn").on("click", function(event) {
-
+	// save button
+	$(".saveBtn").on("click", function(event) {
 	
-//display message when event saved in localstorage
+	//display message when event saved in localstorage
 	var x = document.getElementById('msgShow');
-	if (x.style.display === 'none') {
+	if (x.style.display === 'none')
+	{
 	  x.style.display = 'block';
-	} else {
+	} 
+	else
+	{
 	  x.style.display = 'none';
 	}
-
 
 	var blockID = parseInt(
 		$(this)
 			.closest(".time-block")
-     
-			.attr("id")
+     		.attr("id")
 	);
 	
 	var userEntry = $.trim(
@@ -93,5 +102,5 @@ $(".saveBtn").on("click", function(event) {
 
 	// updates planWorkday local storage
 	localStorage.setItem("dayPlanner", JSON.stringify(planWorkday));
-
+});
 });

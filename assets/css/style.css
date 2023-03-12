@@ -1,25 +1,29 @@
+/* for body all elements set font-family,font-size and line-height property. */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   line-height: 1;
 }
 
-
+/* when event is store in localstorage message apper so set property for message textalign and font size */
 #msgShow{
   text-align:center;
   font-size: 30px;
 }
 
+/* for header class display-3 set font-size 100px */
 .display-3{
   font-size: 100px;
 }
+
+/* for header class lead set font size property */
 .lead{
   font-size: 30px;
 }
 
+/* for textarea set properties */
 textarea{
   background: transparent;
- 
   font-size: 24px;
   border: none;
   resize: none;
@@ -28,6 +32,7 @@ textarea{
   padding: 10px;
 }
 
+/* for button set properties */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -39,48 +44,49 @@ textarea{
 }
 
 
-.description{
-  white-space: pre-wrap;
-}
-
-
+/* for display time set properties */
 .time-block{
   text-align: center;
   font-size: 24px;
   border-radius: 15px;
 }
 
+/* for each row it set properties, white-space: pre-wrap means removes before and after space in the text and save only text without space in it */
 .row {
   white-space: pre-wrap;
-
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/*to display hour set properties */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* for past time its set properties for each row */
 .past {
   background-color: #d3d3d3;
   color: white;
   font-size: 24px;
 }
 
+/* for present time its set properties for each row */
 .present {
   background-color: #ff6961;
   color: white;
   font-size: 24px;
 }
 
+/* for future time its set properties for each row */
 .future {
   background-color: #77dd77;
   color: white;
   font-size: 24px;
 }
 
+/* for save button set properties */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -89,10 +95,12 @@ textarea{
   color: white;
 }
 
+/* for savebutton icon its set size 20px */
 .saveBtn i{
   font-size: 20px;
 }
 
+/* when cursor moves on save icon means for hover effect it sets properties */
 .saveBtn i:hover {
   font-size: 40px;
   transition: all .3s ease-in-out;
