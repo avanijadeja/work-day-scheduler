@@ -16,10 +16,10 @@ work-day-scheduler is a one type of planner or calender application in which use
 
 here I can attached some screenshots of work-day-schuduler applicaiton and links .
 
-1. The URL of the work-day-scheduler functional, deployed application -
+1. The URL of the work-day-scheduler functional, deployed application - https://avanijadeja.github.io/work-day-scheduler/
 
 
-2. The URL of the work-day-scduler GitHub repository -
+2. The URL of the work-day-scduler GitHub repository - https://github.com/avanijadeja/work-day-scheduler
 
 
 3. Screenshots of work-day-schduler application outputs.
